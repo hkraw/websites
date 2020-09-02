@@ -1,5 +1,4 @@
 # GACTF-XCTF
-
 ## vmpwn
 
 - VM stack buffer overflow to execute arbitrary bytecode.
