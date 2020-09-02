@@ -1,3 +1,5 @@
 # Ctf challenge writeups
 
-[3kctf](https://blog.harshkhuha.in/test_long/folder1/3kctf.html)
+[3kctf](https://blog.harshkhuha.in/writeups/3kctf-challenge/)
+[cards](https://blog.harshkhuha.in/writeups/cards/)
+[fword-ctf](https://blog.harshkhuha.in/writeups/fword/)
