@@ -1,4 +1,6 @@
-# t_express
+# Samsung-ctf
+
+## t_express
 
 I played Hackers Playground-2020 with team warlockrootx, and solved one pwn challenge. The challenges were well organized. 
 
@@ -16,9 +18,8 @@ exploit->
 6. Shell
 ```
 #### Exploit.
-```py
+```python
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 from pwn import *
 """
 typedef struct pass {
