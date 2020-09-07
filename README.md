@@ -8,4 +8,4 @@
 6. [Inctf](https://blog.harshkhuha.in/writeups/inctf/)
 7. [rgbctf](https://blog.harshkhuha.in/writeups/rgbctf/)
 8. [samsung-ctf](https://blog.harshkhuha.in/writeups/samsungctf/)
-
+9. [COMPFEST-CTF](https://blog.harshkhuha.in/writeups/COMPFEST/)
