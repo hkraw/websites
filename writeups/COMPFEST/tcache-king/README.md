@@ -14,6 +14,8 @@ https://drive.google.com/file/d/1j7pscqy2wrIKFV0w5CXtn9BDIkjHJhQy/view?usp=shari
 - Nice and uniqe challenge :)
 - There is obviuos UAF. We can do double free.
 - But glibc 2.31 has check for tcache double free.
+- We can use fastbin here. Allocating freeing 7 chunk of same size. After that if the size range in fastbin it will go to fastbin.
+- We can point fastbin anywhere we want because it will all stash all the list after the current bin into tcache. And no size check perfomed.
 - There are some restrictions in the binary.
 - In add-note function
 - We can only use alphanumeric characters in our note.
@@ -22,7 +24,7 @@ https://drive.google.com/file/d/1j7pscqy2wrIKFV0w5CXtn9BDIkjHJhQy/view?usp=shari
 - It allows all characters to be used in the chunk.
 - There is now view() function. So my script guess four bits.
 - Leak using stdout structure trick.
-- Other there is nothing new. Just requires Some heavy heap manipulation.
+- There is nothing more new. Just requires Some heavy heap manipulation.
 - I didn't knew that NULL bytes were allowed in add-note.
 - I did this challenge without using null bytes in add-note :P
 - free_hook is the best targate with tcache :)
