@@ -22,7 +22,7 @@ https://drive.google.com/file/d/1j7pscqy2wrIKFV0w5CXtn9BDIkjHJhQy/view?usp=shari
 - This makes the challenge tricky.
 - There is one more function called changename. which allocates 0x40 sized chunk.
 - It allows all characters to be used in the chunk.
-- There is now view() function. So my script guess four bits.
+- There is no view() function. So my script guess four bits.
 - Leak using stdout structure trick.
 - There is nothing more new. Just requires Some heavy heap manipulation.
 - I didn't knew that NULL bytes were allowed in add-note.
